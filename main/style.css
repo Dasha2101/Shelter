@@ -1,18 +1,21 @@
 body{
     background: linear-gradient(to right, #5B483A, #211F20);
     max-width: 1280px;
+    height: 908px;
     margin: auto;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    
    
 }
 header{
+    position: absolute;
     width: 1200px;
     height: 60px;
     margin-top: 60px;
+    
 
     display: flex;
     flex-direction: row;
@@ -71,6 +74,85 @@ a:hover{
 }
 
 #first-l{
-    text-decoration: underline #F1CDB3;
-    
+    text-decoration: underline #F1CDB3;   
 }
+
+#Start-screen{
+    width: 1200px;
+    height: 728px;
+    margin-top: 177px;
+}
+
+#Start-screen-content{
+    width: 1200px;
+    height: 728px;
+    margin-top: 177px;
+}
+
+#Content{
+    width: 460px;
+    height: 322px;
+    margin-top: 163px;
+}
+
+#Heading{
+    font-family: "Georgia";
+    font-size: 44px;
+    line-height: 57.2px;
+    font-weight: 400;
+    width: 310px;
+    height: 114px;
+    color: #FFFFFF;
+    margin-right: 150px;
+}
+
+#Subheading{
+    width: 460px;
+    height: 72px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #CDCDCD;
+    margin-top: 42px;
+    margin-bottom: 0;
+
+}
+
+#button-primary{
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    margin-top: 42px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+}
+
+#Friend{
+    width: 117px;
+    height: 22px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    margin-top: 15px;
+
+}
+
+#img{
+    
+    position: absolute;
+    margin-left: 502px;
+    margin-top:  177px;   
+    width: 698px;
+    height: 728px;
+}
+
