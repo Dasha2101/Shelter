@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(to right, #5B483A, #211F20);
+    max-width: 1280px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+header{
+    width: 1200px;
+    height: 60px;
+    margin-top: 60px;
+
+
+
+}
+
+#logo{
+    width: 184px;
+    height: 60px;;
+}
+
+#title{
+    color: #F1CDB3;
+ 
+    height: 35px;
+    margin-top: 10px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+
+}
+
+
+#subtitle{
+    height: 15px;
+    width: 184px;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1.8px;
+
+}
