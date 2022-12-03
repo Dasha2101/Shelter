@@ -14,34 +14,63 @@ header{
     height: 60px;
     margin-top: 60px;
 
-
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 #logo{
     width: 184px;
-    height: 60px;;
+    height: 60px;
 }
 
 #title{
     color: #F1CDB3;
- 
     height: 35px;
-    margin-top: 10px;
-    font-size: 32px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-
+    font-size: 28px;
+    font-family: "Georgia";
+    letter-spacing: 1px;
+    margin: 0;
 }
-
 
 #subtitle{
     height: 15px;
     width: 184px;
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.7px;
+    font-family: "Arial";
+}
 
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+a:visited{
+    color: #FFFFFF;
+}
+a:hover{
+    color: #FFFFFF;
+}
+
+#nav-menu{
+    width: 443px;
+    height: 27px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Arial";
+    font-size: 15px;
+
+}
+
+#first-l{
+    text-decoration: underline #F1CDB3;
+    
 }
