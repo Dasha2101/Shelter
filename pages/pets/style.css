@@ -1,0 +1,195 @@
+body{
+    width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    width: 1280px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header{
+    width: 1200px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 184px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    width: 443px;
+    height: 27px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pets{
+    height: 1342px;
+    width: 1280px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pets-content{
+    width: 1200px;
+    height: 1162px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pets-title{
+    width: 400px;
+    height: 90px;
+}
+
+#card-container{
+    width: 1200px;
+    height: 930px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 270px;
+    height: 435px;
+}
+
+#nav-bar{
+    width: 340px;
+    height: 52px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    width: 1280px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-content{
+    width: 1200px;
+    height: 310px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacts{
+    width: 278px;
+    height: 234px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacts-title{
+    width: 278px;
+    height: 90px;
+}
+
+#mail{
+    width: 251px;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#phone{
+    width: 239px;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#location{
+    width: 302px;
+    height: 234px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#location-title{
+    width: 270px;
+    height: 90px;
+}
+
+#location1{
+    width: 302px;
+    height: 46px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#location2{
+    width: 302px;
+    height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-content img{
+    width: 300px;
+    height: 310px;
+}
