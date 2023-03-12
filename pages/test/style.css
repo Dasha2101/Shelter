@@ -1,0 +1,12 @@
+#but{
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: aqua;
+}

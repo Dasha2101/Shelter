@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link href="../../pages/main/style.css" rel="stylesheet">
+    <script src="../../pages/main/js.js"></script>
 </head>
 <body>
     <header>
@@ -19,18 +20,31 @@
             <a href="#Help" id="third-l">Help the shelter</a>
             <a href="#" id="four-l">Contacts</a>
         </nav>
+        <section class="burger-menu">
+            <label id="burger-button">
+                <span></span>
+            </label>
+            <nav id="burmenu" class="nav-menu-hide">
+                <section class="nav-container">
+                    <a href="#" id="burger1-l">About the shelter</a>
+                    <a href="../pets/index.html" id="burger2-l">Our pets</a>
+                    <a href="#Help" id="burger3-l">Help the shelter</a>
+                    <a href="#footer-content" id="burger4-l">Contacts</a>
+                 </section>
+            </nav>
+        </section>
     </header>
         <section id="start-screen">
             <section id="Start-screen-content">
                 <section id="Content">
-                    <p id="Heading">Not only people need a house</p>
+                    <p id="Heading">Not only people<br> need a house</p>
                     <p id="Subheading">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
                     <button id="button-primary" onclick="location.href='#Pets'">
                         <p id="Friend">Make a friend</p>
                     </button>
                 </section>
                 <section id="im">
-                <img id="img" src="../../assets/imges/start-screen-puppy.png" alt="Puppy">
+               <img id="img" src="../../assets/imges/start-screen-puppy.png" alt="Puppy">
                 </section>
             </section>
         </section>
@@ -57,7 +71,7 @@
                 <button id="button-arrow">
                     <p>&#10142;</p>
                 </button>
-                <section class="Card-1">
+                <!-- <section class="Card-1">
                     <img class="img-content" src="../../assets/imges/pets-katrine.png" alt="Cat Katrine">
                     <p class="Title-pets-name">Katrine</p>
                     <button class="Learn-more">
@@ -65,28 +79,26 @@
                     </button>
                 </section>
                 <section class="Card-1"><img class="img-content" src="../../assets/imges/pets-jennifer.png" alt="Dog Jennifer">
-                    <p class="Title-pets-name">Jennifer</p>
-                    <button class="Learn-more">
+                    <p class="Title-pets-name">Jennifer</p> -->
+                    <!-- <button class="Learn-more">
                         <p class="title-button">Learn more</p>
-                    </button>
+                    </button> -->
                 </section>
-                <!--<section class="Card-1"> <img class="img-content" src="../../assets/imges/pets-woody.png" alt="Dog Woody">
+                <section class="Card-1"> <img class="img-content" src="../../assets/imges/pets-woody.png" alt="Dog Woody">
                     <p class="Title-pets-name">Woody</p>
                     <button class="Learn-more">
                         <p class="title-button">Learn more</p>
                     </button>
                 </section>
-            -->
                 <button id="button-arrow-right">
                     <p>&#10142;</p>
                 </button>
             </section>
-            <button id="button-primary2">
-                <p id="title-primary-button">Get to know the rest</p>
-            </button>
+                <!-- <button id="button-primary2">
+                    <p id="title-primary-button">Get to know the rest</p>
+                </button> -->
         </section>
     </section>
-
     <section id="Help">
         <section id="Help-content">
             <h3 id="Heading-Help">How you can help
@@ -176,7 +188,5 @@
             <img src="../../assets/imges/footer-puppy.png" alt="puppy" id="footer-puppy">
         </section>
     </footer>
-</body>
-</html>
 </body>
 </html>
