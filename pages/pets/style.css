@@ -879,8 +879,10 @@
     #logo{
         widows: 184px;
         height: 60px;
-        z-index: 2;
+        z-index: 1;
     }
+
+    
 
     #title{
         width: 184px;

@@ -3,6 +3,7 @@ let boxBurger,
     burgerButton,
     overlay,
     links
+    // logoPets
 
 function init(){
     //Burger
@@ -11,6 +12,8 @@ function init(){
     burgerButton  = document.getElementById('burger-button');
     overlay = document.createElement("section");
     document.body.append(overlay);
+    // logoPets = document.createElement("logo-pets");
+    // document.body.append(logoPets);
 
     links = Array.from(document.querySelectorAll("#burmenu a"));
     links.forEach((link) => {link.addEventListener("click", (e) => {overlay.classList.remove("overlay"); burgerButton.classList.remove("button-rotate"); slideMenu.classList.remove("nav-menu-show"); })})
@@ -26,6 +29,7 @@ function showWork(){
     slideMenu.classList.toggle("nav-menu-show")
     burgerButton.classList.toggle("button-rotate")
     overlay.classList.toggle("overlay");
+    logoPets.classList.toggle("logoPets");
 
 }
 
