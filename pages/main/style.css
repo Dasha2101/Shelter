@@ -3049,7 +3049,7 @@ a {
 }
 
 .content-md-win{
-    width: 220px;
+    width: 240px;
     height: 321px;
 
     display: flex;
@@ -3113,16 +3113,16 @@ a {
 }
 
 .pet-breed{
-    width: 224px;
-    height: 23px;
-    margin-top: 10px;
-    margin-bottom: 18px;
-    margin-left: 15px;
+    width: 232px;
+    height: 31px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 6px;
 
     font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 115%;
     letter-spacing: 0.06em;
 
@@ -3170,9 +3170,9 @@ li::before{
 }
 
 .data-list{
-    width: 154px;
+    width: 240px;
     height: 97px;
-    margin: 25px 0 0 -70px;
+    margin: 16px 0 0 3px;
 
     display: flex;
     flex-direction: column;

@@ -155,6 +155,8 @@ function cardFiller(i){
 
     let card = document.createElement("section");
     card.classList.add("card");
+
+    card.id = "card-" + i
     card.append(petImg);
     card.append(petName);
     card.append(buttonLM);
@@ -273,6 +275,7 @@ function popup(){
         buttonMdText.textContent = "X";
         modalButton.append(buttonMdText)
 
+        modalWin.id = "popup-" + i
         modalButton.addEventListener("click", removeModal);
         overlay.addEventListener("click", removeOverlay);
 
@@ -314,7 +317,7 @@ function removeModal(e){
 
 function outputModalWin(){
     for (let i = 0; i < countPet; i++) {
-        cards.item(i).addEventListener("click", showModals(petsOur[i]))
+        cards.item(i).addEventListener("click", showModals(cards.item(i).id.replace("card-", "")))
     }
 
 }
@@ -323,7 +326,7 @@ function outputModalWin(){
 function showModals(i){
     return function(){
     //show modal windows
-        modals[i].classList.add("showen-mod-window")
+        document.getElementById("popup-" + i).classList.add("showen-mod-window")
         overlay.classList.add("overlay");
         document.getElementsByTagName("body")[0].style.overflow = 'hidden';
 
