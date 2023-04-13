@@ -31,7 +31,7 @@ header{
     color: #F1CDB3;
     height: 35px;
     width: 200px;
-    font-family: "Georgia", serif;
+    font-family: "Georgia", sans-serif;
     letter-spacing: 1px;
     margin: 0;
     font-style: normal;
@@ -48,10 +48,9 @@ header{
     height: 15px;
     width: 184px;
     margin-left: 4px;
-    margin-bottom: 5px;
+    margin-top: 10px;
 
-    letter-spacing: 1.7px;
-    font-family: "Arial", serif;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -65,14 +64,20 @@ header{
 
 }
 
-a{
+a {
     text-decoration: none;
     color: #CDCDCD;
 }
-a:hover{
+#nav-a:hover{
     color: #FAFAFA;
     border-bottom: solid 3px #F1CDB3;
 }
+
+#nav-first{
+    /* color: #FAFAFA; */
+    border-bottom: solid 3px #F1CDB3;
+}
+
 
 .burger-menu{
     display: none;
@@ -85,10 +90,15 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
-    font-family: "Arial", serif;
+    font-family: "Arial", sans-serif;
     font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+
+    color: #CDCDCD;
 }
 
 #first-l{
@@ -137,21 +147,22 @@ a:hover{
 
 #Heading{
 
-    font-family: "Georgia", serif;
+    font-family: "Georgia", sans-serif;
     font-size: 44px;
     font-style: normal;
-    line-height: 57.2px;
+    line-height: 57px;
     font-weight: 400;
     width: 310px;
     height: 114px;
     color: #FFFFFF;
-    margin: 0;
+
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 40px
+    margin: 0;
+    margin-top: -2px;
 }
 
 
@@ -159,19 +170,18 @@ a:hover{
 
     width: 460px;
     height: 72px;
-    font-family: "Arial", serif;
+    font-family: "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #CDCDCD;
-    margin: 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 40px
+    margin: 0px 0px 3px 0px;
 
 }
 
@@ -181,7 +191,6 @@ a:hover{
     height: 52px;
     background: #F1CDB3;
     border-radius: 100px;
-    margin-top: 42px;
     border: solid 2px #F1CDB3;
     margin: 0;
 
@@ -192,16 +201,21 @@ a:hover{
     gap: 10px;
 }
 
+#button-primary:hover{
+    background: #F1CDB3;
+    cursor: pointer;
+}
+
 #Friend{
     width: 117px;
     height: 22px;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.04em;
-    margin-top: 15px;
+    line-height: 22.1px;
+    letter-spacing: 0.05em;
+    margin-top: 11px;
 
     display: flex;
     flex-direction: column;
@@ -209,7 +223,7 @@ a:hover{
     align-items: center;
 }
 
-#im{
+#img{
     width: 698px;
     height: 728px;
     margin-left: 43px;
@@ -250,7 +264,7 @@ a:hover{
 #about-pets{
     width: 300px;
     height: 408px;
-    margin-left: 105px;
+    margin-left: 115px;
 
     display: flex;
     flex-direction: row;
@@ -263,7 +277,7 @@ a:hover{
     width: 430px;
     height: 380px;
     margin-top:14px;
-    margin-right: 108px;
+    margin-right: 120px;
 
     display: flex;
     flex-direction: column;
@@ -275,9 +289,9 @@ a:hover{
 
     width: 370px;
     height: 90px;
-    margin: 0;
+    margin: 0 0 0 4px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -296,9 +310,9 @@ a:hover{
 
     width: 430px;
     height: 96px;
-    margin-top: 25px;
+    margin: 25px 0 0 4px;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -313,9 +327,9 @@ a:hover{
 
     width: 430px;
     height: 144px;
-    margin-top: 10px;
+    margin: 25px 4px 0 4px;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -333,7 +347,7 @@ a:hover{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 
@@ -357,14 +371,13 @@ a:hover{
     width: 400px;
     height: 90px;
     text-align: center;
-    margin-top: -8px;
+    margin: -10px 0 37px 2px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
-
     letter-spacing: 0.06em;
 
     color: #545454;
@@ -374,15 +387,12 @@ a:hover{
 
     width: 1200px;
     height: 435px;
-    margin-top: -40px;
-
+    margin-top: -35px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-
 
 }
 
@@ -402,7 +412,15 @@ a:hover{
     padding: 23px 19px;
     transform: rotate(180deg);
     background: #F6F6F6;
+    margin-top: -2px;
 }
+
+#button-arrow:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
+
 #button-arrow-right{
     width: 52px;
     height: 52px;
@@ -418,14 +436,19 @@ a:hover{
     align-items: center;
     padding: 23px 19px;
     background: #F6F6F6;
+    margin-top: -2px;
 }
 
+#button-arrow-right:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
 
 
 .Card-1{
     width: 270px;
     height: 435px;
-    margin-top: 0;
+    margin: 4px 31px 0;
 
     background: #FAFAFA;
     border-radius: 9px;
@@ -437,22 +460,39 @@ a:hover{
     align-items: center;
 }
 
+.Card-1:hover{
+    cursor: pointer;
+
+}
+
+.Card-1:hover .Learn-more{
+    cursor: pointer;
+    background: #FDDCC4;
+
+}
+
+.Learn-more:hover{
+    cursor: pointer;
+    background: #FDDCC4;
+}
+
+
 .img-content{
     width: 270px;
     height: 270px;
 
     margin-left: 0%;
     margin-right: 0%;
-    margin-top: 0%;
+    margin-top: -1%;
     border-radius: 9px 9px 0px 0px;
 }
 
 .Title-pets-name{
     width: 74px;
     height: 23px;
-    margin: 0;
+    margin: -2px 0 0 -6px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -467,13 +507,12 @@ a:hover{
 }
 
 
-
 .Learn-more{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    margin-bottom: 30px ;
+    margin: 0px 4px 33px  4px;
 
     width: 187px;
     height: 52px;
@@ -482,17 +521,187 @@ a:hover{
     border-radius: 100px;
     background: #FFFFFF;
 }
-.title-button{
-    width: 97px;
-    height: 22px;
-    margin-left: 45px;
-    margin-top: 12px;
 
 
-    font-family: 'Georgia', serif;
+/* MODALWINDOW*/
+.modal-window{
+    display: none;
+
+}
+
+.title-vector{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.06em;
+}
+
+.modal-button:hover{
+    cursor: pointer;
+    background: #FDDCC4;
+}
+
+.showen-mod-window{
+    width: 952px;
+    height: 552px;
+    z-index: 2;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background: #FAFAFA; */
+    border-radius: 9px;
+    position: fixed;
+    top: 20%;
+    left: 20%
+
+}
+
+.content-md-win{
+    width: 351px;
+    height: 362px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.content-without-button{
+    height: 500px;
+    width: 900px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+
+}
+
+
+.modal-button{
+    height: 52px;
+    width: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 900px;
+
+}
+
+.md-pets-name{
+    width: 145px;
+    height: 45px;
+    margin: -18px 0 0 5px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+li {
+    list-style-type: none;
+   }
+
+li::before{
+    /* text-decoration: none; */
+    color: #F1CDB3;
+    content: "•";
+    margin-right: 5px;
+}
+
+.pet-breed{
+    width: 270px;
+    height: 23px;
+    margin-top: 10px;
+    margin-left: 4px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.pet-describe{
+    width: 350px;
+    height: 102px;
+    margin: 15px 0 0 4px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.data-list{
+    width: 250px;
+    height: 102px;
+    margin: 38px 0 0 7px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.pet-info{
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    width: 250px;
+    margin: 0;
+
+    color: #000000;
+
+}
+
+.photo-pet{
+    height: 500px;
+    width: 500px;
+    margin-left: -4px;
+}
+
+.modal-button{
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+
+}
+
+.title-button{
+    width: 109px;
+    height: 22px;
+    margin-left: 38px;
+    margin-top: 13px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -514,24 +723,28 @@ a:hover{
     background: #F1CDB3;
     border-radius: 100px;
     border: #F1CDB3 solid 2px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
+}
+
+#button-primary2:hover{
+    cursor: pointer;
+    background: #FDDCC4;
 }
 
 #title-primary-button{
-    width: 171px;
+    width: 172px;
     height: 22px;
-    margin-top: 0;
+    margin: -2px 0 0 2px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
     color: #292929;
 
-    flex: none;
     order: 0;
     align-self: center;
     flex-grow: 0;
@@ -540,7 +753,13 @@ a:hover{
 #Help{
 
     height: 611px;
+    width: 1280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #FFFFFF;
+
 }
 
 #Help-content{
@@ -557,16 +776,15 @@ a:hover{
 
 #Heading-Help{
 
-    width: 308px;
+    width: 310px;
     height: 90px;
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin: 1px 0 0 1px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -577,9 +795,8 @@ a:hover{
 
     width: 1026px;
     height: 281px;
-    margin-top: 10px;
-    flex-basis: 100%;
-
+    flex-basis: 68%;
+    margin-bottom: 11px;
 
     display: flex;
     flex-direction: row;
@@ -589,42 +806,154 @@ a:hover{
 }
 
 .icon-list{
-    width: 120px;
+    width: 175px;
     height: 113px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    padding-right: 52px;
-    margin-top: 40px;
-
 }
 
+#icon-list1{
+    margin-bottom: 6px;
+    margin-left: -53px;
+}
+
+#icon-title-0{
+    margin-right: 13px;
+    margin-top: 31px;
+}
+
+#img-icon1{
+    margin-right: 13px;
+}
+
+ #icon-list2{
+    margin-bottom: -1px;
+    margin-right: -22px;
+    padding-right: 72px;
+}
+
+#img-icon2{
+    margin-right: -52px;
+}
+
+#icon-title-1{
+    margin-right: -55px;
+    margin-top: 27px;
+}
+
+ #icon-list3{
+    margin-right: -40px;
+    padding-right: 41px;
+}
+
+#icon-title-3{
+    margin-right: -47px;
+    margin-top: 32px;
+}
+
+#icon-list4{
+    margin-bottom: 3px;
+    margin-right: 4px;
+    padding-right: 48px;
+}
+
+#img-icon4{
+    margin-right: -46px;
+}
+
+#icon-title-4{
+    margin-right: -33px;
+    margin-top: 28px;
+}
+
+
+ #icon-list5{
+    margin-bottom: -1px;
+    margin-right: -54px;
+    padding-right: 19px;
+}
+
+#img-icon5{
+    margin-right: -30px;
+}
+
+#icon-title-5{
+    margin-right: 3px;
+    margin-top: 32px;
+}
+
+
+#icon-list6{
+    margin-bottom: -27px;
+    margin-left: -60px;
+    padding-left: 36px;
+}
+
+#img-icon6{
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+ #icon-list7{
+    margin-bottom: -29px;
+    margin-left: -95px;
+}
+
+#img-icon7{
+    margin-top: 7px;
+}
+
+#icon-title-7{
+    margin-right: 3px;
+    margin-top: 32px;
+}
+
+ #icon-list8{
+    margin-bottom: -30px;
+    margin-left: -55px;
+}
+
+#img-icon8{
+    margin-top: 10px;
+}
+
+#icon-title-8{
+    margin-right: 0px;
+    margin-top: 28px;
+}
+
+#icon-list9{
+    margin-bottom: -25px;
+    margin-left: -37px;
+}
+
+#img-icon9{
+    margin-top: 10px;
+}
 
 .icon-picture{
 
     height: 60px;
+    width: 60px;
 }
-
 
 .icon-title{
 
-    width: 145px;
+    width: 171px;
     height: 23px;
-    text-align: center;
-    margin-bottom: 0;
 
-    font-family: 'Georgia', serif;
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 21px;
     line-height: 115%;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
 
     color: #545454;
 }
-
-
 
 #Donation{
 
@@ -650,13 +979,12 @@ a:hover{
     align-items: center;
 }
 
-
 #Donation-dog{
 
     width: 505px;
     height: 261px;
+    margin: 0 0 4px 0;
 }
-
 
 #Content-donation{
 
@@ -674,9 +1002,9 @@ a:hover{
 
     width: 300px;
     height: 90px;
-    margin: 0;
+    margin: -1px 0 0 1px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -691,13 +1019,13 @@ a:hover{
 
 #subheading-donation{
 
-    width: 307px;
+    width: 308px;
     height: 17px;
-    margin: 0;
-    font-family: 'Georgia', serif;
+    margin: -1px 0 0 0;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 110%;
 
     letter-spacing: 0.06em;
@@ -716,7 +1044,7 @@ a:hover{
 
     width: 349px;
     height: 43px;
-    margin: 0;
+    margin: -1px 0 0 0;
 
     background: #F1CDB3;
     border-radius: 9px;
@@ -726,6 +1054,7 @@ a:hover{
 
     width: 30px;
     height: 23px;
+    margin: 0 8px 2px 11px;
 }
 
 #card-number{
@@ -733,12 +1062,13 @@ a:hover{
     width: 274px;
     height: 23px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
+    margin: 0 7px 3px -7px;
 
     color: #545454;
 
@@ -749,12 +1079,12 @@ a:hover{
     width: 380px;
     height: 72px;
 
-
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    margin: 0 0 2px 1px;
 
 
 
@@ -793,14 +1123,14 @@ footer{
 }
 
 #contacts-title{
-    width: 278px;
+    width: 279px;
     height: 90px;
+    margin: -2px 0 0 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
-    margin: 0;
+    font-size: 35px;
     line-height: 130%;
 
     letter-spacing: 0.06em;
@@ -827,7 +1157,7 @@ footer{
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
-    margin: 0;
+    margin: 0 0 4px 0;
 
     letter-spacing: 0.06em;
     color: #F1CDB3;
@@ -855,15 +1185,14 @@ footer{
 }
 
 #location-title{
-    width: 270px;
+    width: 271px;
     height: 90px;
-    font-family: 'Georgia';
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 130%;
-    margin: 0;
-
+    margin: -1px 5px 0px -25px;
 
     letter-spacing: 0.06em;
 
@@ -897,7 +1226,7 @@ footer{
 }
 
 .location-name{
-    font-family: 'Georgia';
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -905,7 +1234,7 @@ footer{
 
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin: 0;
+    margin: -4px 2px 0 5px;
 }
 
 #footer-puppy{
@@ -918,6 +1247,7 @@ footer{
 .icon{
     width: 40px;
     height: 32px;
+    margin: 0 0 2px 0;
 }
 
 .icon1{
@@ -943,7 +1273,7 @@ body{
 header{
     width: 708px;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 37px;
     z-index: 2;
 
     display: flex;
@@ -952,19 +1282,20 @@ header{
     align-items: center;
 }
 #logo{
-    widows: 184px;
+    width: 184px;
     height: 60px;
+    margin: 0 0 -1px 0;
 }
 
 #title{
-    width: 184px;
+    width: 186px;
     height: 35px;
-    margin: 0;
+    margin: -8px 0 0 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 31px;
+    font-size: 32px;
     line-height: 110%;
 
     display: flex;
@@ -978,14 +1309,12 @@ header{
 #subtitle{
     width: 181px;
     height: 15px;
-    margin-left: 4px;
+    margin: 11px 0 0 4px;
 
-    margin-bottom: 0;
-
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 15px;
 
     display: flex;
@@ -995,14 +1324,19 @@ header{
     color: #FFFFFF;
 }
 
-a{
+a {
     text-decoration: none;
     color: #CDCDCD;
 }
-
-a:hover{
+#nav-a:hover{
     color: #FAFAFA;
     border-bottom: solid 3px #F1CDB3;
+}
+
+#nav-first{
+    /* color: #FAFAFA; */
+    border-bottom: solid 3px #F1CDB3;
+    margin-top: 5px;
 }
 
 
@@ -1013,13 +1347,14 @@ a:hover{
 #nav-menu{
     width: 443px;
     height: 27px;
+    margin: -1px 0 17px 0;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    font-family: "Arial", serif;
+    font-family: "Arial", sans-serif;
     font-size: 15px;
 }
 
@@ -1029,7 +1364,7 @@ a:hover{
 }
 #start-screen{
     width: 768px;
-    margin-top: -120px;
+    margin-top: -119px;
 
     z-index: 1;
 
@@ -1042,7 +1377,7 @@ a:hover{
 #Start-screen-content{
     width: 569px;
     height: 1015px;
-    margin-top: 180px;
+    margin-top: 173px;
 
     display: flex;
     flex-direction: column;
@@ -1053,6 +1388,7 @@ a:hover{
 #Content{
     width: 460px;
     height: 322px;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
@@ -1060,14 +1396,14 @@ a:hover{
     align-items: flex-start;
 }
 
+
 #Heading{
 
     width: 310px;
     height: 114px;
-    margin: 0;
-    margin-left: -7px;
+    margin: 0 0 0 -2px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -1085,15 +1421,13 @@ a:hover{
 #Subheading{
     width: 460px;
     height: 72px;
+    margin-bottom: 3px;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    margin-left: -8px;
-    margin-top: 17px;
-    margin-bottom: 0;
 
 
     display: flex;
@@ -1105,8 +1439,9 @@ a:hover{
 #button-primary{
     width: 207px;
     height: 52px;
-    margin-left: 120px;
+    margin-left: 126px;
     margin-top: 10px;
+    margin-bottom: 1px;
 
     display: flex;
     flex-direction: column;
@@ -1118,26 +1453,30 @@ a:hover{
 
 }
 
+#button-primary:hover{
+    background: #F1CDB3;
+    cursor: pointer;
+}
+
 #Friend{
     width: 118px;
     height: 22px;
-    margin-left: 40px;
+    margin-left: 37px;
+    margin-top: 14px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-    align-items: center;
     color: #292929;
 }
 
 #img{
     width: 569px;
     height: 593px;
-    margin-left: 117px;
-    margin-bottom: -5px;
+    margin-left: 137px;
 }
 
 #About{
@@ -1155,6 +1494,7 @@ a:hover{
 #About-content{
     width: 437px;
     height: 868px;
+    margin: 0 0 35px 0;
 
     display: flex;
     flex-direction: column-reverse;
@@ -1167,6 +1507,7 @@ a:hover{
     width: 300px;
     height: 408px;
     margin-top: 30px;
+    margin-bottom: -8px;
 
     display: flex;
     flex-direction: column;
@@ -1190,9 +1531,9 @@ a:hover{
 #Heading-pet{
     width: 370px;
     height: 90px;
-    margin: 0;
+    margin: 0px 0 12px 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -1210,9 +1551,9 @@ a:hover{
 
     width: 430px;
     height: 96px;
-    margin: 0;
+    margin: -2px 0 -13px 0;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1226,9 +1567,9 @@ a:hover{
 
     width: 430px;
     height: 144px;
-    margin: 0;
+    margin: 23px 0 -15px 0;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1256,6 +1597,7 @@ a:hover{
 #Content-for-pets{
     width: 708px;
     height: 697px;
+    margin: 0 0 18px 0;
 
     display: flex;
     flex-direction: column;
@@ -1266,7 +1608,7 @@ a:hover{
 #Heading-Slider{
     width: 400px;
     height: 90px;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 0;
 
     font-family: 'Georgia', serif;
@@ -1284,9 +1626,10 @@ a:hover{
 
 }
 
-#Slider{ 
+#Slider{
     width: 708px;
     height: 435px;
+    margin-bottom: 0;
 
     display: flex;
     flex-direction: row;
@@ -1310,10 +1653,16 @@ a:hover{
     transform: rotate(180deg);
     background: #F6F6F6;
 }
+
+#button-arrow:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
 #button-arrow-right{
     width: 52px;
     height: 52px;
-    margin-left: 0px;
+    margin-left: -3px;
 
     box-sizing: border-box;
     border: 2px solid #F1CDB3;
@@ -1327,10 +1676,15 @@ a:hover{
     background: #F6F6F6;
 }
 
+#button-arrow-right:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
 .Card-1{
     width: 270px;
     height: 435px;
-    margin-top: 0;
+    margin: 0 13px 0 17px;
 
     background: #FAFAFA;
     border-radius: 9px;
@@ -1342,11 +1696,17 @@ a:hover{
     align-items: center;
 }
 
+
+.Card-1:hover .Learn-more {
+    cursor: pointer;
+    background: #FDDCC4
+}
+
 .img-content{
     width: 270px;
     height: 270px;
 
-    margin-left: 0%;
+    margin-left: -4%;
     margin-right: 0%;
     margin-top: 0%;
     border-radius: 9px 9px 0px 0px;
@@ -1355,9 +1715,9 @@ a:hover{
 .Title-pets-name{
     width: 74px;
     height: 23px;
-    margin: 0;
+    margin: -5px 0 -2px -12px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1376,7 +1736,7 @@ a:hover{
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    margin-bottom: 30px ;
+    margin: 1px 0 31px -5px;
 
     width: 187px;
     height: 52px;
@@ -1385,19 +1745,183 @@ a:hover{
     border-radius: 100px;
     background: #FFFFFF;
 }
-.title-button{
-    width: 97px;
-    height: 22px;
-    margin-left: 45px;
-    margin-top: 12px;
+
+.Learn-more:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
+.modal-window{
+    display: none;
+}
+
+.showen-mod-window{
+    width: 682px;
+    height: 402px;
+    z-index: 2;
+    overflow: hidden;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background: #FAFAFA; */
+    border-radius: 9px;
+    position: fixed;
+    top: 20%;
+    left: 10%
+}
 
 
-    font-family: 'Georgia', serif;
+.content-md-win{
+    width: 260px;
+    height: 303px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+
+.content-without-button{
+    height: 350px;
+    width: 630px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+
+}
+
+.modal-button{
+    height: 52px;
+    width: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 625px;
+
+}
+
+.modal-button:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
+li {
+    list-style-type: none;
+   }
+
+li::before{
+    /* text-decoration: none; */
+    color: #F1CDB3;
+    content: "•";
+    margin-right: 5px;
+}
+
+.title-vector{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.06em;
+}
+
+.md-pets-name{
+    width: 145px;
+    height: 45px;
+    margin: -73px 4px 3px 0;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.pet-breed{
+    width: 250px;
+    height: 23px;
+    margin-top: 7px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.pet-describe{
+    width: 261px;
+    height: 98px;
+    margin: 19px 3px 18px 0;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+.data-list{
+    width: 250px;
+    height: 87px;
+    margin: 3px 0 13px 3px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+
+.pet-info{
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    width: 250px;
+    margin: 0;
+
+    color: #000000;
+
+}
+
+.photo-pet{
+    height: 350px;
+    width: 350px;
+    margin-left: -7px;
+}
+
+.title-button{
+    width: 100px;
+    height: 22px;
+    margin: 14px -1px 0 42px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
 
     color: #292929;
 }
@@ -1417,18 +1941,22 @@ a:hover{
     background: #F1CDB3;
     border-radius: 100px;
     border: #F1CDB3 solid 2px;
-    margin-bottom: 15px;
+}
+
+#button-primary2:hover{
+    cursor: pointer;
+    background: #FDDCC4
 }
 
 #title-primary-button{
-    width: 171px;
+    width: 172px;
     height: 22px;
-    margin-top: 0;
+    margin-top: -2px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -1456,6 +1984,7 @@ a:hover{
 
     width: 630px;
     height: 599px;
+    margin-bottom: -9px;
 
     display: flex;
     flex-direction: column;
@@ -1464,16 +1993,15 @@ a:hover{
 }
 
 #Heading-Help{
-    width: 308px;
+    width: 310px;
     height: 90px;
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 10px;
+    margin: -14px -5px 22px -3px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -1489,7 +2017,7 @@ a:hover{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -1510,20 +2038,81 @@ a:hover{
 
 .icon-title{
 
-    width: 145px;
+    width: 168px;
     height: 23px;
     text-align: center;
     margin-bottom: 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
 
     color: #545454;
 }
+
+#icon-title-0{
+    margin: 32px 0 0 0;
+}
+
+#icon-title-1{
+    margin: 32px 0 0 -2px;
+}
+
+#icon-title-2{
+    margin: 32px 0 0 1px;
+}
+
+#img-icon4{
+    margin: 10px 0 0 0;
+}
+
+#icon-title-3{
+    margin: 29px 0 0 1px;
+}
+
+#img-icon5{
+    margin: 6px 0 0 0;
+}
+
+#icon-title-4{
+    margin: 29px 0 0 1px;
+}
+
+#img-icon6{
+    margin: 6px 0 0 0;
+}
+
+#icon-title-5{
+    margin: 29px 0 0 1px;
+}
+
+#img-icon7{
+    margin: 11px 0 0 0;
+}
+
+#icon-title-6{
+    margin: 29px 0 0 1px;
+}
+
+#img-icon8{
+    margin: 15px 0 0 0;
+}
+
+#icon-title-7{
+    margin: 33px 0 0 1px;
+}
+
+#img-icon9{
+    margin: 10px 0 0 0;
+}
+
+#icon-title-8{
+    margin: 30px 0 0 1px;
+}
+
 
 #Donation{
 
@@ -1554,6 +2143,7 @@ a:hover{
 
     width: 505px;
     height: 261px;
+    margin: 0 0 -5px 0;
 }
 
 #Content-donation{
@@ -1574,7 +2164,7 @@ a:hover{
     margin: 0;
     margin-top: 5px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -1589,13 +2179,14 @@ a:hover{
 
 #subheading-donation{
 
-    width: 307px;
+    width: 308px;
     height: 17px;
+    margin: 3px 0 12px 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 110%;
 
     letter-spacing: 0.06em;
@@ -1611,6 +2202,7 @@ a:hover{
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
+    margin: -11px 1px -16px 0;
 
     width: 349px;
     height: 43px;
@@ -1624,13 +2216,15 @@ a:hover{
 
     width: 30px;
     height: 23px;
+    margin: 8px 0 6px 10px;
 }
 #card-number{
 
-    width: 274px;
+    width: 273px;
     height: 23px;
+    margin: 8px 9px 7px -1px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1646,9 +2240,10 @@ a:hover{
     width: 380px;
     height: 72px;
     margin-top: 20px;
+    margin-bottom: -4px;
 
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
@@ -1675,7 +2270,7 @@ footer{
 #footer-content{
     width: 708px;
     height: 234px;
-    margin-top: 25px;
+    margin-top: 29px;
 
     display: flex;
     flex-direction: row;
@@ -1700,7 +2295,7 @@ footer{
     width: 280px;
     height: 90px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -1726,7 +2321,7 @@ footer{
 }
 
 .contacts-text{
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1762,10 +2357,10 @@ footer{
 #location-title{
     width: 280px;
     height: 90px;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 34px;
+    font-size: 35px;
     line-height: 130%;
     margin: 0;
 
@@ -1777,8 +2372,9 @@ footer{
 }
 
 #location1{
-    width: 290px;
+    width: 302px;
     height: 46px;
+    margin: 0 0 0 21px;
 
     display: flex;
     flex-direction: row;
@@ -1792,7 +2388,7 @@ footer{
 #location2{
     width: 302px;
     height: 32px;
-    margin-left: 15px;
+    margin: 0 0 0 20px;
 
     display: flex;
     flex-direction: row;
@@ -1803,20 +2399,21 @@ footer{
 }
 
 .location-name{
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
+    margin: 0 0 0 4px;
 
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin: 0;
+
 }
 #footer-puppy{
     width: 300px;
     height: 310px;
-    margin-top: 70px;
+    margin-top: 64px;
 }
 
 .icon{
@@ -1827,7 +2424,6 @@ footer{
 .icon1{
     width: 22px;
     height: 32px;
-
     margin: 0 15px 0 0;
 }
 }
@@ -1857,20 +2453,21 @@ header{
 }
 
 #logo{
-    widows: 184px;
+    width: 206px;
     height: 60px;
     z-index: 2;
+    margin-right: 63px;
 }
 
 #title{
-    width: 184px;
+    width: 190px;
     height: 35px;
-    margin: 0;
+    margin: 0 0px 0 1px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 31px;
+    font-size: 32px;
     line-height: 110%;
 
     display: flex;
@@ -1881,17 +2478,30 @@ header{
 
 }
 
+a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
+#nav-a:hover{
+    color: #FAFAFA;
+    border-bottom: solid 3px #F1CDB3;
+}
+
+#nav-first{
+    /* color: #FAFAFA; */
+    border-bottom: solid 3px #F1CDB3;
+}
+
 #subtitle{
     width: 181px;
     height: 15px;
-    margin-left: 4px;
+    margin-top: 10px;
+    margin-left: 7px;
 
-    margin-bottom: 0;
-
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 15px;
 
     display: flex;
@@ -1919,7 +2529,7 @@ header{
 }
 #burger-button > span::after {
   content: '';
-  top: 11px;
+  top: 10px;
 }
 
 .button-rotate{
@@ -1928,7 +2538,7 @@ header{
     animation: button 0.5s forwards;
     transition: 0.6s;
     z-index: 2;
-    /* transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    margin-left: 18px;
 
 }
 
@@ -1937,18 +2547,16 @@ header{
 }
 
 .burger-menu{
-    display: flex; /* используем flex для центрирования содержимого */
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;  /* центрируем содержимое кнопки */
+    align-items: center;
     justify-content: space-between;
 
-    margin-left: 20px;
     width: 30px;
-    /* height: 22px; */
+    margin: 0 14px 0 -61px;
     cursor: pointer;
 
 }
-
 
 .nav-menu-hide{
     display: none;
@@ -1968,19 +2576,38 @@ header{
     position: absolute;
     top: 0;
     z-index: 1;
+    margin: 0 -3px 0 0;
 
     animation: anim 0.5s forwards;
 
 }
 
+#burger2-l{
+    margin: 30px 0 55px 9px;
+}
+
+#burger1-l{
+    margin: -12px 0 0 9px;
+}
+
+#burger3-l{
+    margin: -25px 0 30px 9px;
+}
+
+#burger4-l{
+    margin: 0 0 -12px 9px;
+}
+
+
 
 .nav-container{
-    height: 243px;
-    width: 327px;
+    height: 327px;
+    width: 251px;
+    margin: 0 0 0 -8px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -2068,8 +2695,9 @@ header{
 
     width: 300px;
     height: 96px;
+    margin: 1px 0 -9px 0;
 
-    font-family: 'Arial';
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -2100,18 +2728,24 @@ header{
 
 }
 
+#button-primary:hover{
+    background: #F1CDB3;
+    cursor: pointer;
+
+}
+
 #Friend{
     width: 125px;
     height: 22px;
-    margin-left: 33px;
+    margin-left: 34px;
+    margin-top: 13px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-    align-items: center;
     color: #292929;
 }
 
@@ -2119,7 +2753,7 @@ header{
     width: 260px;
     height: 271.77px;
     margin-left: 40px;
-    margin-bottom: -5px;
+
 }
 
 #About{
@@ -2169,14 +2803,14 @@ header{
     /* z-index: 1; */
 }
 #Heading-pet{
-    width: 300px;
+    width: 293px;
     height: 64px;
-    margin: 0;
+    margin: -13px 0 -2px 0;
 
-    font-family: 'Georgia';
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 130%;
 
     display: flex;
@@ -2191,13 +2825,14 @@ header{
 
     width: 270px;
     height: 144px;
-    margin: 0;
+    margin: 0 0 -3px 0;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
+    text-align: justify;
 
     color: #4C4C4C;
 
@@ -2207,15 +2842,16 @@ header{
 
     width: 270px;
     height: 239px;
-    margin: 0;
+    margin: -2px 0 -15px 0;
 
-    font-family: 'Arial', serif;
+    font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
 
     display: flex;
+    text-align: justify;
     align-items: center;
 
     color: #4C4C4C;
@@ -2249,6 +2885,7 @@ header{
     height: 64px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: -1p;
 
     font-family: 'Georgia', serif;
     font-style: normal;
@@ -2266,7 +2903,7 @@ header{
 
 }
 
-#Slider{ 
+#Slider{
     width: 270px;
     height: 507px;
 
@@ -2312,6 +2949,16 @@ header{
     background: #F6F6F6;
 }
 
+#button-arrow:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
+#button-arrow-right:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
 .Card-1{
     width: 270px;
     height: 435px;
@@ -2325,6 +2972,11 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.Card-1:hover .Learn-more{
+    cursor: pointer;
+    background: #FDDCC4
 }
 
 .img-content{
@@ -2369,17 +3021,194 @@ header{
     border-radius: 100px;
     background: #FFFFFF;
 }
-.title-button{
-    width: 97px;
-    height: 22px;
-    margin-left: 45px;
-    margin-top: 12px;
+
+.Learn-more:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
+
+.modal-window{
+    display: none;
+}
+
+.showen-mod-window{
+    width: 270px;
+    height: 393px;
+    z-index: 2;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 9px;
+    position: fixed;
+    top: 15%;
+    left: 15%
+
+}
+
+.content-md-win{
+    width: 220px;
+    height: 321px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-without-button{
+    height: 341px;
+    width: 240px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+
+}
 
 
-    font-family: 'Georgia', serif;
+.md-pets-name{
+    width: 145px;
+    height: 45px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+.modal-button{
+    height: 52px;
+    width: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 217px;
+
+}
+
+.md-pets-name{
+    width: 145px;
+    height: 45px;
+    margin: 0;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+.pet-breed{
+    width: 224px;
+    height: 23px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    margin-left: 15px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.pet-describe{
+    width: 220px;
+    height: 112px;
+    margin: 6px 0 0 -3px;
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    text-align: justify;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+
+}
+
+li {
+    list-style-type: none;
+   }
+
+li::before{
+    /* text-decoration: none; */
+    color: #F1CDB3;
+    content: "•";
+    margin-right: 5px;
+}
+
+.title-vector{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    letter-spacing: 0.06em;
+}
+
+.modal-button:hover{
+    cursor: pointer;
+    background: #FDDCC4;
+}
+
+.data-list{
+    width: 154px;
+    height: 97px;
+    margin: 25px 0 0 -70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.pet-info{
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin: 0;
+    width: 240px;
+
+    color: #000000;
+}
+
+.photo-pet{
+    display: none;
+}
+
+.title-button{
+    width: 98px;
+    height: 22px;
+    margin-left: 43px;
+    margin-top: 14px;
+
+
+    font-family: 'Georgia', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -2403,15 +3232,21 @@ header{
     border: #F1CDB3 solid 2px;
 }
 
-#title-primary-button{
-    width: 171px;
-    height: 22px;
-    margin-top: 0;
+#button-primary2:hover{
+    cursor: pointer;
+    background: #FDDCC4
+}
 
-    font-family: 'Georgia', serif;
+
+#title-primary-button{
+    width: 172px;
+    height: 22px;
+    margin-top: -1px;
+
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -2435,16 +3270,15 @@ header{
     align-items: center;
 }
 #Heading-Help{
-    width: 220px;
+    width: 222px;
     height: 64px;
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 0px;
+    margin: 0 -2px 0 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 130%;
     letter-spacing: 0.06em;
 
@@ -2484,7 +3318,7 @@ header{
 
 }
 .icon-picture{
-
+    width: 50px;
     height: 50px;
 }
 .icon-title{
@@ -2502,6 +3336,42 @@ header{
     letter-spacing: 0.06em;
 
     color: #545454;
+}
+
+#icon-title-2{
+    margin: 23px 0 0 0;
+}
+
+#img-icon4{
+    margin: 2px 0 0 0;
+}
+
+#icon-title-3{
+    margin: 23px 0 0 0;
+}
+
+#img-icon5{
+    margin: 6px 0 0 0;
+}
+
+#img-icon6{
+    margin: 6px 0 0 0;
+}
+
+#img-icon7{
+    margin: 10px 0 0 0;
+}
+
+#img-icon8{
+    margin: 14px 0 0 0;
+}
+
+#icon-title-7{
+    margin: 22px 0 0 0;
+}
+
+#img-icon9{
+    margin: 14px 0 0 0;
 }
 
 #Donation{
@@ -2549,12 +3419,12 @@ header{
 
 #Heading-donation{
 
-    width: 300px;
+    width: 229px;
     height: 64px;
-    margin: 0;
+    margin: 0 0 0 36px;
     text-align: center;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -2569,19 +3439,16 @@ header{
 
 #subheading-donation{
 
-    width: 290px;
+    width: 308px;
     height: 24px;
-    margin-left: 15px;
-    margin-top: 5px;
-    margin-bottom: 0;
+    margin: 10px 0 0 13px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 110%;
 
-    letter-spacing: 0.06em;
     display: flex;
     align-items: center;
 
@@ -2609,16 +3476,16 @@ header{
 
     width: 30px;
     height: 23px;
+    margin: 0 -13px 0 0;
 }
 #card-number{
-
-    width: 206px;
+    width: 215px;
     height: 17px;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 115%;
     letter-spacing: 0.06em;
 
@@ -2629,11 +3496,12 @@ header{
 
     width: 280px;
     height: 90px;
-    margin-top: 10px;
-    text-align: center;
+    margin: 11px 0 0 10px;
+    text-align: justify;
 
 
-    font-family: 'Arial', serif;
+
+    font-family: 'Arial', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
@@ -2683,12 +3551,13 @@ footer{
 #contacts-title{
     width: 278px;
     height: 64px;
+    margin: 4px 0 0 0;
 
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    margin: 0;
+
     line-height: 130%;
     text-align: center;
 
@@ -2700,7 +3569,7 @@ footer{
 #mail{
     width: 251px;
     height: 32px;
-    margin-left: 12px;
+    margin-left: 13px;
 
     display: flex;
     flex-direction: row;
@@ -2727,6 +3596,7 @@ footer{
     width: 239px;
     height: 32px;
     margin-left: 20px;
+    margin-bottom: -5px;
 
     display: flex;
     flex-direction: row;
@@ -2789,16 +3659,15 @@ footer{
 }
 
 .location-name{
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
-    text-align: center;
+    margin: 0 0 1px 5px;
 
     letter-spacing: 0.06em;
     color: #F1CDB3;
-    margin: 0;
 }
 
 #footer-puppy{

@@ -10,31 +10,24 @@
         align-items: center;
     }
 
-    header{
+    #head{
         width: 1280px;
         height: 120px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        background: #FFFFFF;
-    }
-
-    #header{
-        width: 1200px;
-        height: 60px;
+        z-index: 2;
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        background: #FFFFFF;
     }
+
 
     #logo{
         width: 184px;
         height: 60px;
+        margin: 0 0 0 40px;
 
         display: flex;
         flex-direction: column;
@@ -42,15 +35,19 @@
         align-items: center;
     }
 
-    #logo-title{
-        width: 184px;
-        height: 35px;
-        margin: 0;
+    #burger-menu{
+        display: none;
+    }
 
-        font-family: 'Georgia', serif;
+    #logo-title{
+        width: 186px;
+        height: 35px;
+        margin: 0 0 0 3px;
+
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 32px;
         line-height: 110%;
 
         display: flex;
@@ -61,13 +58,14 @@
     }
 
     #logo-sub{
-        width: 179px;
+        width: 180px;
         height: 15px;
+        margin: 0 0 0 5px;
 
-        font-family: 'Arial', serif;
+        font-family: 'Arial', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 15px;
 
         display: flex;
@@ -81,6 +79,7 @@
     nav{
         width: 443px;
         height: 27px;
+        margin: 0 40px 5px 0;
 
         display: flex;
         flex-direction: row;
@@ -91,7 +90,7 @@
     nav a{
         text-decoration: none;
         color: #545454;
-        font-family: 'Arial';
+        font-family: 'Arial', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -102,13 +101,20 @@
         border-bottom: solid 3px #F1CDB3;
     }
 
+    a {
+        text-decoration: none;
+        color: #CDCDCD;
+    }
+
     nav a:hover{
+        color: #292929;
         border-bottom: solid 3px #F1CDB3;
     }
 
     #pets{
         height: 1342px;
         width: 1280px;
+
 
         display: flex;
         flex-direction: row;
@@ -131,9 +137,10 @@
     #pets-title{
         width: 400px;
         height: 90px;
+        margin: -10px -2px 0 0;
         text-align: center;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 35px;
@@ -159,6 +166,7 @@
     .card{
         width: 270px;
         height: 435px;
+        margin: 0 0 -32px 0;
 
         display: flex;
         flex-direction: column;
@@ -170,17 +178,29 @@
 
     }
 
+    .card:hover{
+        cursor: pointer;
+
+    }
+
+    .card:hover .learn-more{
+        cursor: pointer;
+        background: #FDDCC4;
+
+    }
+
     .card img{
+        height: 270px;
         width: 270px;
-        width: 270px;
+        margin: -34px 0 0 0;
     }
 
     .pet-name{
         width: 68px;
         height: 23px;
-        margin: 0;
+        margin: 9px 0 9px -7px;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -197,12 +217,13 @@
     .learn-more{
         width: 187px;
         height: 52px;
+        margin: 0 0 17px 0;
 
         background: #FAFAFA;
         border-radius: 100px;
         border: solid 2px #F1CDB3;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
@@ -214,9 +235,179 @@
 
     }
 
+        /* MODALWINDOW*/
+    .modal-window{
+        display: none;
+
+    }
+
+    .title-vector{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    .modal-button:hover{
+        cursor: pointer;
+        background: #FDDCC4;
+    }
+
+    .showen-mod-window{
+        width: 952px;
+        height: 552px;
+        z-index: 2;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* background: #FAFAFA; */
+        border-radius: 9px;
+        position: fixed;
+        top: 20%;
+        left: 20%
+
+    }
+
+    .content-md-win{
+        width: 351px;
+        height: 362px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .content-without-button{
+        height: 500px;
+        width: 900px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        background: #FAFAFA;
+        border-radius: 9px;
+
+    }
+
+
+    .modal-button{
+        height: 52px;
+        width: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        margin-left: 900px;
+
+    }
+
+    .md-pets-name{
+        width: 145px;
+        height: 45px;
+        margin: -18px 0 0 5px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    li::before{
+        /* text-decoration: none; */
+        color: #F1CDB3;
+        content: "•";
+        margin-right: 5px;
+    }
+
+    .pet-breed{
+        width: 270px;
+        height: 23px;
+        margin-top: 10px;
+        margin-left: 4px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+    }
+
+    .pet-describe{
+        width: 350px;
+        height: 102px;
+        margin: 15px 0 0 4px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+    }
+
+    .data-list{
+        width: 250px;
+        height: 102px;
+        margin: 38px 0 0 7px;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .pet-info{
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        width: 250px;
+        margin: 0;
+
+        color: #000000;
+
+    }
+
+    .photo-pet{
+        height: 500px;
+        width: 500px;
+        margin-left: -4px;
+    }
+
+    .modal-button{
+        width: 52px;
+        height: 52px;
+        box-sizing: border-box;
+
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+
+    }
+
     #nav-bar{
         width: 340px;
         height: 52px;
+        margin: 12px;
 
         display: flex;
         flex-direction: row;
@@ -274,6 +465,7 @@
     #contacts{
         width: 278px;
         height: 234px;
+        margin: 0 0 4px 0;
 
         display: flex;
         flex-direction: column;
@@ -282,14 +474,14 @@
     }
 
     #contacts-title{
-        width: 278px;
+        width: 279px;
         height: 90px;
+        margin: -1px 0 0 0;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 34px;
-        margin: 0;
+        font-size: 35px;
         line-height: 130%;
 
         letter-spacing: 0.06em;
@@ -336,6 +528,7 @@
     #location{
         width: 302px;
         height: 234px;
+        margin: 0 0 5px 0;
 
         display: flex;
         flex-direction: column;
@@ -344,15 +537,14 @@
     }
 
     #location-title{
-        width: 270px;
+        width: 271px;
         height: 90px;
-        font-family: 'Georgia';
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 34px;
+        font-size: 35px;
         line-height: 130%;
-        margin: 0;
-
+        margin: -1px 5px 0px -25px;
 
         letter-spacing: 0.06em;
 
@@ -386,7 +578,7 @@
     }
 
     .location-name{
-        font-family: 'Georgia';
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -394,28 +586,25 @@
 
         letter-spacing: 0.06em;
         color: #F1CDB3;
-        margin: 0;
+        margin: 0 2px 0 5px;
     }
 
     #footer-puppy{
         width: 300px;
         height: 310px;
-
         margin-top: 40px;
     }
-
     .icon{
         width: 40px;
         height: 32px;
+        margin: 0 0 2px 0;
     }
-
     .icon1{
         width: 22px;
         height: 32px;
-
         margin: 0 15px 0 0;
     }
-}
+    }
 
 @media screen and (max-width: 1279px) and (min-width: 768px){
 
@@ -430,31 +619,21 @@
         align-items: center;
     }
 
-    header{
+    #head{
         width: 768px;
         height: 120px;
         z-index: 2;
 
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         background: #FFFFFF;
     }
 
-    #header{
-        width: 708px;
-        height: 60px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     #logo{
-        widows: 184px;
+        width: 184px;
         height: 60px;
 
         display: flex;
@@ -463,15 +642,19 @@
         align-items: center;
     }
 
-    #logo-title{
-        width: 184px;
-        height: 35px;
-        margin: 0;
+    #burger-menu{
+        display: none;
+    }
 
-        font-family: 'Georgia', serif;
+    #logo-title{
+        width: 186px;
+        height: 35px;
+        margin: -8px 0 0 1px;
+
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 31px;
+        font-size: 32px;
         line-height: 110%;
 
         display: flex;
@@ -485,13 +668,12 @@
     #logo-sub{
         width: 181px;
         height: 15px;
-        margin-left: 4px;
-        margin-bottom: 0;
+        margin: 0 0 -8px 5px;
 
         font-family: 'Arial', serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 12.5px;
+        font-size: 13px;
         line-height: 15px;
 
         display: flex;
@@ -504,6 +686,7 @@
     nav{
         width: 443px;
         height: 27px;
+        margin: 0 0 3px 19px;
 
         display: flex;
         flex-direction: row;
@@ -527,6 +710,19 @@
     }
 
     nav a:hover{
+        border-bottom: solid 3px #F1CDB3;
+    }
+    #selected-a{
+        border-bottom: solid 3px #F1CDB3;
+    }
+
+    a {
+        text-decoration: none;
+        color: #CDCDCD;
+    }
+
+    nav a:hover{
+        color: #292929;
         border-bottom: solid 3px #F1CDB3;
     }
 
@@ -556,7 +752,7 @@
         width: 400px;
         height: 90px;
         text-align: center;
-        margin: 0;
+        margin: 16px 0 0 0;
 
         font-family: 'Georgia', serif;
         font-style: normal;
@@ -596,17 +792,29 @@
 
     }
 
+    .card:hover{
+        cursor: pointer;
+
+    }
+
+    .card:hover .learn-more{
+        cursor: pointer;
+        background: #FDDCC4;
+
+    }
+
     .card img{
+        height: 270px;
         width: 270px;
-        width: 270px;
+        margin: -1px 0 0 0;
     }
 
     .pet-name{
         width: 68px;
         height: 23px;
-        margin: 0;
+        margin: 0 0 1px 5px;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -623,7 +831,7 @@
     .learn-more{
         width: 187px;
         height: 52px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
 
         background: #FAFAFA;
         border-radius: 100px;
@@ -641,10 +849,161 @@
 
     }
 
+    .learn-more:hover{
+        cursor: pointer;
+        background: #FDDCC4;
+    }
+
+    .modal-window{
+        display: none;
+    }
+
+    .showen-mod-window{
+        width: 682px;
+        height: 402px;
+        z-index: 2;
+        overflow: hidden;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* background: #FAFAFA; */
+        border-radius: 9px;
+        position: fixed;
+        top: 20%;
+        left: 10%
+    }
+
+
+    .content-md-win{
+        width: 260px;
+        height: 303px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .content-without-button{
+        height: 350px;
+        width: 630px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        background: #FAFAFA;
+        border-radius: 9px;
+
+    }
+
+    .modal-button{
+        height: 52px;
+        width: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        margin-left: 625px;
+
+    }
+
+    li {
+        list-style-type: none;
+       }
+
+    li::before{
+        /* text-decoration: none; */
+        color: #F1CDB3;
+        content: "•";
+        margin-right: 5px;
+    }
+
+
+    .md-pets-name{
+        width: 145px;
+        height: 45px;
+        margin: -73px 4px 3px 0;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+    }
+
+    .pet-breed{
+        width: 250px;
+        height: 23px;
+        margin-top: 7px;
+        margin-left: 2px;
+        margin-bottom: 2px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+    }
+
+    .pet-describe{
+        width: 261px;
+        height: 98px;
+        margin: 19px 3px 18px 0;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+
+    }
+
+    .data-list{
+        width: 250px;
+        height: 87px;
+        margin: 3px 0 13px 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+    }
+
+    .pet-info{
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        width: 250px;
+        margin: 0;
+
+        color: #000000;
+
+    }
+
+    .photo-pet{
+        height: 350px;
+        width: 350px;
+        margin-left: -5px;
+    }
+
     #nav-bar{
         width: 340px;
         height: 52px;
-        margin-top: 65px;
+        margin-top: 68px;
 
         display: flex;
         flex-direction: row;
@@ -693,7 +1052,7 @@
     #footer-content{
         width: 708px;
         height: 234px;
-        margin-top: 25px;
+        margin-top: 29px;
 
         display: flex;
         flex-direction: row;
@@ -718,7 +1077,7 @@
         width: 280px;
         height: 90px;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 35px;
@@ -744,7 +1103,7 @@
     }
 
     .contacts-text{
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -780,10 +1139,10 @@
     #location-title{
         width: 280px;
         height: 90px;
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 34px;
+        font-size: 35px;
         line-height: 130%;
         margin: 0;
 
@@ -795,8 +1154,9 @@
     }
 
     #location1{
-        width: 290px;
+        width: 302px;
         height: 46px;
+        margin: 0 0 0 21px;
 
         display: flex;
         flex-direction: row;
@@ -810,7 +1170,7 @@
     #location2{
         width: 302px;
         height: 32px;
-        margin-left: 15px;
+        margin: 0 0 0 20px;
 
         display: flex;
         flex-direction: row;
@@ -821,20 +1181,21 @@
     }
 
     .location-name{
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
+        margin: 0 0 0 4px;
 
         letter-spacing: 0.06em;
         color: #F1CDB3;
-        margin: 0;
+
     }
     #footer-puppy{
         width: 300px;
         height: 310px;
-        margin-top: 70px;
+        margin-top: 64px;
     }
 
     .icon{
@@ -845,7 +1206,6 @@
     .icon1{
         width: 22px;
         height: 32px;
-
         margin: 0 15px 0 0;
     }
     }
@@ -864,35 +1224,56 @@
         align-items: center;
     }
 
-    header{
+    #head{
         width: 257px;
-        height: 60px;
-        margin-top: 30px;
-        margin-right: 47px;
+        height: 120px;
+
 
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        margin-left: -39px;
     }
+
+     a {
+        text-decoration: none;
+        color: #CDCDCD;
+    }
+    #nav-a:hover{
+        color: #FAFAFA;
+        border-bottom: solid 3px #F1CDB3;
+    }
+    #nav-first{
+        color: #FAFAFA;
+         border-bottom: solid 3px #F1CDB3;
+    }
+
 
     #logo{
-        widows: 184px;
+        width: 184px;
         height: 60px;
-        z-index: 1;
+        margin: 0 -37px;
+        z-index: 2;
     }
 
-    
+    #logo-title:hover{
+        color: #F1CDB3;
+    }
 
-    #title{
-        width: 184px;
+    #logo-sub:hover{
+       color: #F1CDB3
+    }
+
+    #logo-title{
+        width: 186px;
         height: 35px;
         margin: 0;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 31px;
+        font-size: 32px;
         line-height: 110%;
 
         display: flex;
@@ -903,16 +1284,16 @@
 
     }
 
-    #subtitle{
+    #logo-sub{
         width: 181px;
         height: 15px;
         margin-left: 4px;
-        margin-bottom: 0;
+        margin-top: 10px;
 
-        font-family: 'Arial', serif;
+        font-family: 'Arial', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 12.5px;
+        font-size: 13px;
         line-height: 15px;
 
         display: flex;
@@ -929,7 +1310,7 @@
       position: absolute;
       width: 30px;
       height: 2px;
-      z-index: 1;
+      z-index: 2;
       margin-right: 5px;
       background-color: #545454;
     }
@@ -940,7 +1321,7 @@
     }
     #burger-button > span::after {
       content: '';
-      top: 12px;
+      top: 11px;
     }
 
     .button-rotate{
@@ -965,15 +1346,14 @@
         display: none;
     }
 
-    .burger-menu{
+    #burger-menu{
         display: flex; /* используем flex для центрирования содержимого */
         flex-direction: column;
         align-items: flex-end;  /* центрируем содержимое кнопки */
         justify-content: space-between;
-
-        margin-left: 20px;
+        margin-left: -25px;
         width: 30px;
-        /* height: 22px; */
+
         cursor: pointer;
 
     }
@@ -1002,13 +1382,31 @@
 
     }
 
+    #burger2-l{
+        margin: 25px 0 55px 9px;
+    }
+
+    #burger1-l{
+        margin: -9px 0 0 9px;
+    }
+
+    #burger3-l{
+        margin: -25px 0 30px 9px;
+    }
+
+    #burger4-l{
+        margin: 0 0 -12px 9px;
+    }
+
+
+
     .nav-container{
-        height: 243px;
-        width: 327px;
+        height: 327px;
+        width: 251px;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -1048,7 +1446,6 @@
     #pets-content{
         width: 300px;
         height: 1565px;
-        margin-top: 50px;
 
         display: flex;
         flex-direction: column;
@@ -1077,6 +1474,7 @@
     #card-container{
         width: 270px;
         height: 1365px;
+        margin: 11px;
 
         display: flex;
         flex-direction: row;
@@ -1100,15 +1498,27 @@
 
     }
 
+    .card:hover{
+        cursor: pointer;
+
+    }
+
+    .card:hover .learn-more{
+        cursor: pointer;
+        background: #FDDCC4;
+
+    }
+
     .card img{
+        height: 270px;
         width: 270px;
-        width: 270px;
+        margin: 3px;
     }
 
     .pet-name{
         width: 68px;
         height: 23px;
-        margin: 0;
+        margin: 0 0 8px -5px;
 
         font-family: 'Georgia', serif;
         font-style: normal;
@@ -1127,7 +1537,7 @@
     .learn-more{
         width: 187px;
         height: 52px;
-        margin-bottom: 25px;
+        margin-bottom: 28px;
 
         background: #FAFAFA;
         border-radius: 100px;
@@ -1143,10 +1553,186 @@
         color: #292929
     }
 
+    .learn-more:hover{
+        cursor: pointer;
+        background: #FDDCC4;
+
+    }
+    .modal-window{
+        display: none;
+    }
+
+    .showen-mod-window{
+        width: 270px;
+        height: 393px;
+        z-index: 2;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 9px;
+        position: fixed;
+        top: 15%;
+        left: 15%
+
+    }
+
+    .content-md-win{
+        width: 220px;
+        height: 321px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .content-without-button{
+        height: 341px;
+        width: 240px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        background: #FAFAFA;
+        border-radius: 9px;
+
+    }
+
+
+    .md-pets-name{
+        width: 145px;
+        height: 45px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+
+    }
+
+    .modal-button{
+        height: 52px;
+        width: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        margin-left: 217px;
+
+    }
+
+    .md-pets-name{
+        width: 145px;
+        height: 45px;
+        margin: 0;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+
+    }
+
+    .pet-breed{
+        width: 216px;
+        height: 27px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        margin-left: 8px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+    }
+
+    .pet-describe{
+        width: 220px;
+        height: 112px;
+        margin: 6px 0 0 -3px;
+
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        text-align: justify;
+        letter-spacing: 0.06em;
+
+        color: #000000;
+
+    }
+
+    li {
+        list-style-type: none;
+       }
+
+    li::before{
+        /* text-decoration: none; */
+        color: #F1CDB3;
+        content: "•";
+        margin-right: 5px;
+    }
+
+    .title-vector{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    .modal-button:hover{
+        cursor: pointer;
+        background: #FDDCC4;
+    }
+
+    .data-list{
+        width: 154px;
+        height: 97px;
+        margin: 25px 0 0 -70px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+
+    .pet-info{
+        font-family: 'Georgia', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        margin: 0;
+        width: 240px;
+
+        color: #000000;
+    }
+
+    .photo-pet{
+        display: none;
+    }
+
     #nav-bar{
         width: 300px;
         height: 52px;
-        margin-bottom: 40px;
+        margin: 62px 0 0 0;
 
         display: flex;
         flex-direction: row;
@@ -1218,12 +1804,13 @@
     #contacts-title{
         width: 278px;
         height: 64px;
+        margin: 4px 0 0 0;
 
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 25px;
-        margin: 0;
+
         line-height: 130%;
         text-align: center;
 
@@ -1235,7 +1822,7 @@
     #mail{
         width: 251px;
         height: 32px;
-        margin-left: 12px;
+        margin-left: 13px;
 
         display: flex;
         flex-direction: row;
@@ -1262,6 +1849,7 @@
         width: 239px;
         height: 32px;
         margin-left: 20px;
+        margin-bottom: -5px;
 
         display: flex;
         flex-direction: row;
@@ -1274,7 +1862,6 @@
         width: 300px;
         height: 222px;
         margin-top: 45px;
-
 
         display: flex;
         flex-direction: column;
@@ -1323,16 +1910,15 @@
     }
 
     .location-name{
-        font-family: 'Georgia', serif;
+        font-family: 'Georgia', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 115%;
-        text-align: center;
+        margin: 0 0 1px 5px;
 
         letter-spacing: 0.06em;
         color: #F1CDB3;
-        margin: 0;
     }
 
     #footer-puppy{
@@ -1344,10 +1930,11 @@
     .icon1{
         width: 22px;
         height: 32px;
+
         margin: 0 15px 0 0;
     }
 
-}
+    }
 
 .overlay{
     background: rgba(41, 41, 41, 0.6);

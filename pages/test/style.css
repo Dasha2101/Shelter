@@ -1,12 +1,90 @@
-#but{
-    padding: 10px;
+.modal-win{
+    width: 952px;
+    height: 552px;
 }
-.hide{
-    display: none;
+
+#mod-button{
+    height: 52px;
+    width: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
 }
-.show{
-    display: block;
-    width: 20px;
-    height: 20px;
-    color: aqua;
+
+.vector{
+    background: #292929;
 }
+
+.content-win{
+    width: 900px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#photo-pets{
+    height: 500px;
+    width: 500px;
+}
+
+.info-about-pets{
+    height: 362px;
+    width: 351px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name-pets{
+    width: 145px;
+    height: 45px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #000000;
+}
+
+.breed-pets{
+    height: 23px;
+    width: 151px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    letter-spacing: 0.06em;
+}
+
+.list-info-pets{
+    width: 154px;
+    height: 102px;
+
+}
+
+.data-pets{
+    width: 135px;
+    height: 18px;
+    
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+
+    letter-spacing: 0.06em;
+
+}
+
+
+
