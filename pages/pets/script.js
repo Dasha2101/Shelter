@@ -40,8 +40,8 @@ function init(){
 
 
     //Burger overlay
-    overlay.addEventListener("click", showWork);
-    burgerButton.addEventListener("click", showWork);
+    overlay.addEventListener("click", () => showWork(false));
+    burgerButton.addEventListener("click", () => showWork(true));
 
 
     //Pagination
@@ -129,10 +129,15 @@ function showClick(){
     slideMenu.classList.remove("nav-menu-show")
 }
 
-function showWork(){
+function showWork(burger){
     //Burger
-    slideMenu.classList.toggle("nav-menu-show")
-    burgerButton.classList.toggle("button-rotate")
+    if (burger) {
+        slideMenu.classList.toggle("nav-menu-show")
+        burgerButton.classList.toggle("button-rotate")
+    } else {
+        if (slideMenu.classList.contains("nav-menu-show")) slideMenu.classList.remove("nav-menu-show")
+        if (burgerButton.classList.contains("button-rotate")) burgerButton.classList.remove("button-rotate")
+    }
     overlay.classList.toggle("overlay");
 
 
@@ -303,7 +308,7 @@ function popup(){
 
 
 function removeOverlay(e){
-    document.querySelector(".showen-mod-window").classList.remove("showen-mod-window");
+    document.querySelector(".showen-mod-window")?.classList.remove("showen-mod-window");
     overlay.classList.remove("overlay")
     document.getElementsByTagName("body")[0].style.overflow = 'scroll';
 }
